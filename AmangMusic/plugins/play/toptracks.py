@@ -13,14 +13,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from CilikMusic import app
-from CilikMusic.utils.database import (get_global_tops,
+from AmangMusic import app
+from AmangMusic.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from CilikMusic.utils.decorators.language import languageCB
-from CilikMusic.utils.inline.playlist import (botplaylist_markup,
+from AmangMusic.utils.decorators.language import languageCB
+from AmangMusic.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from CilikMusic.utils.stream.stream import stream
+from AmangMusic.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
