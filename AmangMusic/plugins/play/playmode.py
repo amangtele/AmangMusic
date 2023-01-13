@@ -12,11 +12,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.utils.database import (get_playmode, get_playtype,
+from AmangMusic import app
+from AmangMusic.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from CilikMusic.utils.decorators import language
-from CilikMusic.utils.inline.settings import playmode_users_markup
+from AmangMusic.utils.decorators import language
+from AmangMusic.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
