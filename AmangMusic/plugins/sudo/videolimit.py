@@ -11,10 +11,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import set_video_limit
-from CilikMusic.utils.decorators.language import language
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import set_video_limit
+from AmangMusic.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
