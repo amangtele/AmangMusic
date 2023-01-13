@@ -15,16 +15,16 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils import get_readable_time
-from CilikMusic.utils.database import (add_banned_user,
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils import get_readable_time
+from AmangMusic.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from CilikMusic.utils.decorators.language import language
+from AmangMusic.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
