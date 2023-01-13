@@ -11,7 +11,7 @@ import time
 
 import psutil
 
-from CilikMusic.misc import _boot_
+from AmangMusic.misc import _boot_
 
 from .formatters import get_readable_time
 
