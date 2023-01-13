@@ -16,10 +16,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from CilikMusic import LOGGER, app, userbot
-from CilikMusic.core.call import Cilik
-from CilikMusic.plugins import ALL_MODULES
-from CilikMusic.utils.database import get_banned_users, get_gbanned
+from AmangMusic import LOGGER, app, userbot
+from AmangMusic.core.call import Amang
+from AmangMusic.plugins import ALL_MODULES
+from AmangMusic.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("CilikMusic").error(
+        LOGGER("AmangMusic").error(
             "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
@@ -40,7 +40,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("CilikMusic").warning(
+        LOGGER("AmangMusic").warning(
             "Tidak ada Spotify Vars yang ditentukan. Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
@@ -55,27 +55,27 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("CilikMusic.plugins" + all_module)
-    LOGGER("CilikMusic.plugins").info(
+    LOGGER("AmangMusic.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Cilik.start()
+    await Amang.start()
     try:
-        await Cilik.stream_call(
+        await Amang.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("CilikMusic").error(
+        LOGGER("AmangMusic").error(
             "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda. Pastikan Anda tidak pernah menutup/mengakhiri panggilan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
-    await Cilik.decorators()
-    LOGGER("CilikMusic").info("Cilik Music Bot Started Successfully")
+    await Amang.decorators()
+    LOGGER("AmangMusic").info("Cilik Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("CilikMusic").info("Stopping Cilik Music Bot! GoodBye")
+    LOGGER("AmangMusic").info("Stopping Amang Music Bot! GoodBye")
