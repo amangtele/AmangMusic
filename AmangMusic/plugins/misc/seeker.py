@@ -12,11 +12,11 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from CilikMusic.misc import db
-from CilikMusic.utils.database import (get_active_chats, get_lang,
+from AmangMusic.misc import db
+from AmangMusic.utils.database import (get_active_chats, get_lang,
                                        is_music_playing)
-from CilikMusic.utils.formatters import seconds_to_min
-from CilikMusic.utils.inline import (stream_markup_timer,
+from AmangMusic.utils.formatters import seconds_to_min
+from AmangMusic.utils.inline import (stream_markup_timer,
                                      telegram_markup_timer)
 
 from ..admins.callback import wrong
