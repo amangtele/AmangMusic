@@ -18,18 +18,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from CilikMusic import Telegram, YouTube, app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.plugins.play.playlist import del_plist_msg
-from CilikMusic.plugins.sudo.sudoers import sudoers_list
-from CilikMusic.utils.database import (add_served_chat,
+from AmangMusic import Telegram, YouTube, app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.plugins.play.playlist import del_plist_msg
+from AmangMusic.plugins.sudo.sudoers import sudoers_list
+from AmangMusic.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from CilikMusic.utils.decorators.language import LanguageStart
-from CilikMusic.utils.inline import (help_pannel, private_panel,
+from AmangMusic.utils.decorators.language import LanguageStart
+from AmangMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
