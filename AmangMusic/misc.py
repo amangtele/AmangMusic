@@ -14,7 +14,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from CilikMusic.core.mongo import pymongodb
+from AmangMusic.core.mongo import pymongodb
 
 from .logging import LOGGER
 
