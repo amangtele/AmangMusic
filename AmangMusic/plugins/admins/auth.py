@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.utils.database import (delete_authuser, get_authuser,
+from AmangMusic import app
+from AmangMusic.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from CilikMusic.utils.decorators import AdminActual, language
-from CilikMusic.utils.formatters import int_to_alpha
+from AmangMusic.utils.decorators import AdminActual, language
+from AmangMusic.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
