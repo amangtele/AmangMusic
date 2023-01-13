@@ -13,15 +13,15 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import YouTube, app
-from CilikMusic.core.call import Cilik
-from CilikMusic.misc import db
-from CilikMusic.utils.database import get_loop
-from CilikMusic.utils.decorators import AdminRightsCheck
-from CilikMusic.utils.inline.play import (stream_markup,
+from AmangMusic import YouTube, app
+from AmangMusic.core.call import Amang
+from AmangMusic.misc import db
+from AmangMusic.utils.database import get_loop
+from AmangMusic.utils.decorators import AdminRightsCheck
+from AmangMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from CilikMusic.utils.stream.autoclear import auto_clean
-from CilikMusic.utils.thumbnails import gen_thumb
+from AmangMusic.utils.stream.autoclear import auto_clean
+from AmangMusic.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -69,7 +69,7 @@ async def skip(cli, message: Message, _, chat_id):
                                             message.from_user.first_name
                                         )
                                     )
-                                    await Cilik.stop_stream(chat_id)
+                                    await Amang.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -96,7 +96,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name)
                 )
                 try:
-                    return await Cilik.stop_stream(chat_id)
+                    return await Amang.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -104,7 +104,7 @@ async def skip(cli, message: Message, _, chat_id):
                 await message.reply_text(
                     _["admin_10"].format(message.from_user.first_name)
                 )
-                return await Cilik.stop_stream(chat_id)
+                return await Amang.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -120,7 +120,7 @@ async def skip(cli, message: Message, _, chat_id):
                 _["admin_11"].format(title)
             )
         try:
-            await Cilik.skip_stream(chat_id, link, video=status)
+            await Amang.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -149,7 +149,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_9"])
         try:
-            await Cilik.skip_stream(chat_id, file_path, video=status)
+            await Amang.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -167,7 +167,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Cilik.skip_stream(chat_id, videoid, video=status)
+            await Amang.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -180,7 +180,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Cilik.skip_stream(chat_id, queued, video=status)
+            await Amang.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
