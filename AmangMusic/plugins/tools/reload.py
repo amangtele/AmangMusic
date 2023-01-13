@@ -13,13 +13,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.core.call import Cilik
-from CilikMusic.misc import db
-from CilikMusic.utils.database import get_authuser_names, get_cmode
-from CilikMusic.utils.decorators import (ActualAdminCB, AdminActual,
+from AmangMusic import app
+from AmangMusic.core.call import Amang
+from AmangMusic.misc import db
+from AmangMusic.utils.database import get_authuser_names, get_cmode
+from AmangMusic.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from CilikMusic.utils.formatters import alpha_to_int
+from AmangMusic.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -68,7 +68,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Cilik.stop_stream(message.chat.id)
+        await Amang.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -79,7 +79,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Cilik.stop_stream(chat_id)
+            await Amang.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
