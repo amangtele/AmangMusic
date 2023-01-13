@@ -18,14 +18,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import db
-from CilikMusic.utils import (Cilikbin, get_channeplayCB,
+from AmangMusic import app
+from AmangMusic.misc import db
+from AmangMusic.utils import (Amangbin, get_channeplayCB,
                               seconds_to_min)
-from CilikMusic.utils.database import (get_cmode, is_active_chat,
+from AmangMusic.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from CilikMusic.utils.decorators.language import language, languageCB
-from CilikMusic.utils.inline import queue_back_markup, queue_markup
+from AmangMusic.utils.decorators.language import language, languageCB
+from AmangMusic.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -216,7 +216,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "🏷" in msg:
             msg = msg.replace("🏷", "")
-        link = await Cilikbin(msg)
+        link = await Amangbin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )
