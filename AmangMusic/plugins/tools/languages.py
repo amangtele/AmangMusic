@@ -13,9 +13,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, languages_present
-from CilikMusic import app
-from CilikMusic.utils.database import get_lang, set_lang
-from CilikMusic.utils.decorators import (ActualAdminCB, language,
+from AmangMusic import app
+from AmangMusic.utils.database import get_lang, set_lang
+from AmangMusic.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
