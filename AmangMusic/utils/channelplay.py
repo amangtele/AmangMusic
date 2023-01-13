@@ -7,8 +7,8 @@
 #
 # All rights reserved.
 
-from CilikMusic import app
-from CilikMusic.utils.database import get_cmode
+from AmangMusic import app
+from AmangMusic.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
