@@ -13,10 +13,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database.memorydatabase import get_video_limit
-from CilikMusic.utils.formatters import convert_bytes
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database.memorydatabase import get_video_limit
+from AmangMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
