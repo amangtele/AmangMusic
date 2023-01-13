@@ -10,10 +10,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from CilikMusic import YouTube, app
-from CilikMusic.utils.channelplay import get_channeplayCB
-from CilikMusic.utils.decorators.language import languageCB
-from CilikMusic.utils.stream.stream import stream
+from AmangMusic import YouTube, app
+from AmangMusic.utils.channelplay import get_channeplayCB
+from AmangMusic.utils.decorators.language import languageCB
+from AmangMusic.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
