@@ -1,7 +1,7 @@
 {
-    "name": "Cilik Music Bot",
+    "name": "Amang Music Bot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/062af7533fb7f44a30f0c.jpg",
+    "logo": "https://telegra.ph/file/8fd3b5104e0a7cba5fe66.jpg",
     "keywords": [
     "python3",
     "telegram",
