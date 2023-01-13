@@ -15,13 +15,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils import help_pannel
-from CilikMusic.utils.database import get_lang, is_commanddelete_on
-from CilikMusic.utils.decorators.language import (LanguageStart,
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils import help_pannel
+from AmangMusic.utils.database import get_lang, is_commanddelete_on
+from AmangMusic.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from CilikMusic.utils.inline.help import (help_back_markup,
+from AmangMusic.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
