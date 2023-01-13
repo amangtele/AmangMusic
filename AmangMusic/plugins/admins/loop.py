@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.utils.database.memorydatabase import (get_loop,
+from AmangMusic import app
+from AmangMusic.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
-from CilikMusic.utils.decorators import AdminRightsCheck
+from AmangMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
