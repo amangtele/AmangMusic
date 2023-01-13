@@ -11,10 +11,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import autoend_off, autoend_on
-from CilikMusic.utils.decorators.language import language
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import autoend_off, autoend_on
+from AmangMusic.utils.decorators.language import language
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
