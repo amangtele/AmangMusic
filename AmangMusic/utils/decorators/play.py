@@ -11,15 +11,15 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
-from CilikMusic import YouTube, app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import (get_cmode, get_lang,
+from AmangMusic import YouTube, app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import (get_cmode, get_lang,
                                        get_playmode, get_playtype,
                                        is_active_chat,
                                        is_commanddelete_on,
                                        is_served_private_chat)
-from CilikMusic.utils.database.memorydatabase import is_maintenance
-from CilikMusic.utils.inline.playlist import botplaylist_markup
+from AmangMusic.utils.database.memorydatabase import is_maintenance
+from AmangMusic.utils.inline.playlist import botplaylist_markup
 
 
 def PlayWrapper(command):
