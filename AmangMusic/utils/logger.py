@@ -8,8 +8,8 @@
 # All rights reserved.
 
 from config import LOG, LOG_GROUP_ID
-from CilikMusic import app
-from CilikMusic.utils.database import is_on_off
+from AmangMusic import app
+from AmangMusic.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
@@ -19,7 +19,7 @@ async def play_logs(message, streamtype):
         else:
             chatusername = "Private Group"
         logger_text = f"""
-📮 **CILIK PLAY LOG**
+📮 **AMANG PLAY LOG**
 
 💬 **Chat:** {message.chat.title} [`{message.chat.id}`]
 👨🏻‍🚀 **User:** {message.from_user.mention}
