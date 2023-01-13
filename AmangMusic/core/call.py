@@ -27,9 +27,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from CilikMusic import LOGGER, YouTube, app
-from CilikMusic.misc import db
-from CilikMusic.utils.database import (add_active_chat,
+from AmangMusic import LOGGER, YouTube, app
+from AmangMusic.misc import db
+from AmangMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -39,11 +39,11 @@ from CilikMusic.utils.database import (add_active_chat,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from CilikMusic.utils.exceptions import AssistantErr
-from CilikMusic.utils.inline.play import (stream_markup,
+from AmangMusic.utils.exceptions import AssistantErr
+from AmangMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from CilikMusic.utils.stream.autoclear import auto_clean
-from CilikMusic.utils.thumbnails import gen_thumb
+from AmangMusic.utils.stream.autoclear import auto_clean
+from AmangMusic.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
@@ -623,4 +623,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-Cilik = Call()
+Amang = Call()
