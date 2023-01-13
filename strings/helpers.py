@@ -132,8 +132,8 @@ HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
 /autoend [enable|disable] - Aktifkan Auto stream end setelah 3 menit jika tidak ada yang mendengarkan.
 
 📈**<u>STATS COMMANDS:</u>**
-/activevoice - Periksa obrolan suara aktif di bot.
-/activevideo - Periksa panggilan video aktif di bot.
+/aktif - Periksa obrolan suara aktif di bot.
+/video - Periksa panggilan video aktif di bot.
 /stats - Periksa Statistik Bot
 
 ⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
