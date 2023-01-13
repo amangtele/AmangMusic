@@ -11,9 +11,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database.memorydatabase import (
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
