@@ -21,17 +21,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from CilikMusic import YouTube, app
-from CilikMusic.core.userbot import assistants
-from CilikMusic.misc import SUDOERS, pymongodb
-from CilikMusic.plugins import ALL_MODULES
-from CilikMusic.utils.database import (get_global_tops,
+from AmangMusic import YouTube, app
+from AmangMusic.core.userbot import assistants
+from AmangMusic.misc import SUDOERS, pymongodb
+from AmangMusic.plugins import ALL_MODULES
+from AmangMusic.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from CilikMusic.utils.decorators.language import language, languageCB
-from CilikMusic.utils.inline.stats import (back_stats_buttons,
+from AmangMusic.utils.decorators.language import language, languageCB
+from AmangMusic.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
