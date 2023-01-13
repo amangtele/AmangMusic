@@ -20,10 +20,10 @@ TEMP_MONGODB = "mongodb+srv://shikhar:shikhar@cluster0.6xzlh.mongodb.net/myFirst
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "Tidak ada URL DB MONGO yang ditemukan.. Bot Anda akan bekerja di Database Cilik"
+        "Tidak ada URL DB MONGO yang ditemukan.. Bot Anda akan bekerja di Database Amang"
     )
     temp_client = Client(
-        "Cilik",
+        "Amang",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -39,5 +39,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Cilik
-    pymongodb = _mongo_sync_.Cilik
+    mongodb = _mongo_async_.Amang
+    pymongodb = _mongo_sync_.Amang
