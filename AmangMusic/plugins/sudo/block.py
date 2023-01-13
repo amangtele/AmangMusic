@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import add_gban_user, remove_gban_user
-from CilikMusic.utils.decorators.language import language
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import add_gban_user, remove_gban_user
+from AmangMusic.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
