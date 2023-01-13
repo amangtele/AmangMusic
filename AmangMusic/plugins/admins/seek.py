@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from CilikMusic import YouTube, app
-from CilikMusic.core.call import Cilik
-from CilikMusic.misc import db
-from CilikMusic.utils import AdminRightsCheck, seconds_to_min
+from AmangMusic import YouTube, app
+from AmangMusic.core.call import Amang
+from AmangMusic.misc import db
+from AmangMusic.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
@@ -70,7 +70,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Cilik.seek_stream(
+        await Amang.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
