@@ -7,7 +7,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from AmangMusic import YouTube, app
-from AmangMusic.core.call import Cilik
+from AmangMusic.core.call import Amang
 from AmangMusic.misc import SUDOERS, db
 from AmangMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
