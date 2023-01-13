@@ -11,9 +11,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import (get_authuser_names, get_cmode,
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import (get_authuser_names, get_cmode,
                                        get_lang, is_active_chat,
                                        is_commanddelete_on,
                                        is_maintenance,
