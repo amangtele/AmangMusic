@@ -6,23 +6,23 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
-from CilikMusic import YouTube, app
-from CilikMusic.core.call import Cilik
-from CilikMusic.misc import SUDOERS, db
-from CilikMusic.utils.database import (is_active_chat,
+from AmangMusic import YouTube, app
+from AmangMusic.core.call import Cilik
+from AmangMusic.misc import SUDOERS, db
+from AmangMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
                                        is_nonadmin_chat, music_off,
                                        music_on, mute_off, mute_on,
                                        set_loop)
-from CilikMusic.utils.decorators.language import languageCB
-from CilikMusic.utils.formatters import seconds_to_min
-from CilikMusic.utils.inline.play import (panel_markup_1,
+from AmangMusic.utils.decorators.language import languageCB
+from AmangMusic.utils.formatters import seconds_to_min
+from AmangMusic.utils.inline.play import (panel_markup_1,
                                           panel_markup_2,
                                           panel_markup_3,
                                           stream_markup,
                                           telegram_markup)
-from CilikMusic.utils.stream.autoclear import auto_clean
-from CilikMusic.utils.thumbnails import gen_thumb
+from AmangMusic.utils.stream.autoclear import auto_clean
+from AmangMusic.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -139,7 +139,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Cilik.pause_stream(chat_id)
+        await Amang.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention)
         )
@@ -150,13 +150,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await Cilik.resume_stream(chat_id)
+        await Amang.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await Cilik.stop_stream(chat_id)
+        await Amang.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_9"].format(mention)
@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_on(chat_id)
-        await Cilik.mute_stream(chat_id)
+        await Amang.mute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_6"].format(mention)
         )
@@ -179,7 +179,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_off(chat_id)
-        await Cilik.unmute_stream(chat_id)
+        await Amang.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_8"].format(mention)
         )
@@ -230,7 +230,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention)
                 )
                 try:
-                    return await Cilik.stop_stream(chat_id)
+                    return await Amang.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -241,7 +241,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
                 )
-                return await Cilik.stop_stream(chat_id)
+                return await Amang.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await Cilik.skip_stream(chat_id, link, video=status)
+                await Amang.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_9"])
             try:
-                await Cilik.skip_stream(
+                await Amang.skip_stream(
                     chat_id, file_path, video=status
                 )
             except Exception:
@@ -312,7 +312,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Cilik.skip_stream(
+                await Amang.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
@@ -330,7 +330,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await Cilik.skip_stream(chat_id, queued, video=status)
+                await Amang.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -425,7 +425,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await Cilik.seek_stream(
+            await Amang.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
