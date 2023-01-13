@@ -5,7 +5,7 @@
 # and is released under the "GNU v3.0 License Agreement".
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
-# All rights reserved.
+# All rights reserved
 
 import random
 import string
@@ -19,21 +19,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from CilikMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from AmangMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from CilikMusic.core.call import Cilik
-from CilikMusic.utils import seconds_to_min, time_to_seconds
-from CilikMusic.utils.channelplay import get_channeplayCB
-from CilikMusic.utils.database import is_video_allowed
-from CilikMusic.utils.decorators.language import languageCB
-from CilikMusic.utils.decorators.play import PlayWrapper
-from CilikMusic.utils.formatters import formats
-from CilikMusic.utils.inline.play import (livestream_markup,
+from AmangMusic.core.call import Amang
+from AmangMusic.utils import seconds_to_min, time_to_seconds
+from AmangMusic.utils.channelplay import get_channeplayCB
+from AmangMusic.utils.database import is_video_allowed
+from AmangMusic.utils.decorators.language import languageCB
+from AmangMusic.utils.decorators.play import PlayWrapper
+from AmangMusic.utils.formatters import formats
+from AmangMusic.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from CilikMusic.utils.inline.playlist import botplaylist_markup
-from CilikMusic.utils.logger import play_logs
-from CilikMusic.utils.stream.stream import stream
+from AmangMusic.utils.inline.playlist import botplaylist_markup
+from AmangMusic.utils.logger import play_logs
+from AmangMusic.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -335,7 +335,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Cilik.stream_call(url)
+                await Amang.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "Ada masalah dengan bot. Silakan laporkan ke pemilik saya dan minta mereka untuk memeriksa grup logger."
@@ -599,7 +599,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("CilikPlaylists") & ~BANNED_USERS
+    filters.regex("AmangPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
