@@ -11,12 +11,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import (get_lang, is_maintenance,
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from CilikMusic.utils.decorators.language import language
+from AmangMusic.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")
