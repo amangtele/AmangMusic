@@ -6,8 +6,8 @@
     "python3",
     "telegram",
     "bot",
-    "Cilik",
-    "CilikMusicBot",
+    "Amang",
+    "AmangMusic",
     "telegram-bot",
     "pyrogram"
     ],
@@ -34,7 +34,7 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Cilik's database for you.",
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use AmangMusic's database for you.",
         "value": "",
         "required": true
       },
@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/grey423/CilikMusic",
+        "value": "https://github.com/amangtele/AmangMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
@@ -90,10 +90,11 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "formation": {
+     "formation": {
           "worker": {
               "quantity": 1,
-              "size": "free"
+              "size": "eco"
           }
-      }
+      },
+      "stack": "heroku-22"
   }
