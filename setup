@@ -1,5 +1,5 @@
 #!/bin/bash
-### Cilik Music Bot Installer
+### Amang Music Bot Installer
 
 pprint (){
 	cred='\033[0;31m'
@@ -75,8 +75,8 @@ node(){
 
 repo(){
 	# Get git repo if the installer is runned standalone
-	[[ ! "CilikMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/grey423/CilikMusic &&  cd CilikMusic
+	[[ ! "AmangMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	git clone https://github.com/amangtele/AmangMusic &&  cd AmangMusic
 }
 
 
@@ -90,7 +90,7 @@ installation(){
 }
 
 clear
-pprint "Welcome to Cilik Music Bot Setup Installer\n\n"
+pprint "Welcome to Amang Music Bot Setup Installer\n\n"
 pprint "If you see any error during Installation Process, Please refer to these files for logs: "
 pprint "\nFor node js errors , Checkout nodelog.txt"
 pprint "\nFor pypi packages errors , Checkout pypilog.txt"
@@ -103,7 +103,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nCilik Music Bot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nAmang Music Bot Installation Completed!" "cgreen"
 sleep 4
 clear
 
@@ -132,6 +132,6 @@ MUSIC_BOT_NAME = $mbt
 STRING_SESSION = $string_session
 OWNER_ID = $ownid""" > .env
 clear
-pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using Cilik Installer, now you can proceed by starting the bot with bash start!"
+pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using AmangMusic Installer, now you can proceed by starting the bot with bash start!"
 pprint "\n\n\nWant more vars?"
 pprint "\nCheckout config.py and readme.md inside config folder for addtional vars. You can change all images , Thumbs, mode and everything from vars. Have a look towards them\n\n"
