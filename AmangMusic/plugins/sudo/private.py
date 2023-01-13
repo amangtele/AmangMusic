@@ -12,13 +12,13 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
-from CilikMusic.utils.database import (add_private_chat,
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
+from AmangMusic.utils.database import (add_private_chat,
                                        get_private_served_chats,
                                        is_served_private_chat,
                                        remove_private_chat)
-from CilikMusic.utils.decorators.language import language
+from AmangMusic.utils.decorators.language import language
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")
