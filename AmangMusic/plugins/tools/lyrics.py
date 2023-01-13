@@ -18,8 +18,8 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from CilikMusic import app
-from CilikMusic.utils.decorators.language import language
+from AmangMusic import app
+from AmangMusic.utils.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")
