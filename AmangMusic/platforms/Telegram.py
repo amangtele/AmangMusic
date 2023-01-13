@@ -18,7 +18,7 @@ from pyrogram.types import (InlineKeyboardButton,
 
 import config
 from config import MUSIC_BOT_NAME, lyrical
-from CilikMusic import app
+from AmangMusic import app
 
 from ..utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
