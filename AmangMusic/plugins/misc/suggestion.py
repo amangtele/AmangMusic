@@ -14,8 +14,8 @@ from datetime import datetime, timedelta
 import config
 from config import clean
 from strings import get_string
-from CilikMusic import app
-from CilikMusic.utils.database import (get_lang,
+from AmangMusic import app
+from AmangMusic.utils.database import (get_lang,
                                        get_private_served_chats,
                                        get_served_chats,
                                        is_suggestion)
