@@ -11,9 +11,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from CilikMusic import app
-from CilikMusic.core.call import Cilik, autoend
-from CilikMusic.utils.database import (get_client, is_active_chat,
+from AmangMusic import app
+from AmangMusic.core.call import Amang, autoend
+from AmangMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -22,7 +22,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from CilikMusic.core.userbot import assistants
+            from AmangMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -32,15 +32,13 @@ async def auto_leave():
                         chat_type = i.chat.type
                         if chat_type in [
                             "supergroup",
-                            "group",
                             "channel",
                         ]:
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1001190342892
-                                and chat_id != -1001733534088
-                                and chat_id != -1001443281821
+                                and chat_id != -1001284445583
+                                and chat_id != -1001772541015
                             ):
                                 if left == 20:
                                     continue
@@ -73,7 +71,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Cilik.stop_stream(chat_id)
+                    await Amang.stop_stream(chat_id)
                 except:
                     continue
                 try:
