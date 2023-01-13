@@ -1,8 +1,8 @@
-<img src="https://telegra.ph/file/062af7533fb7f44a30f0c.jpg" align="right" width="200" height="200"/>
+<img src="https://te.legra.ph/file/15a711b06565578a5eef5.jpg" align="right" width="200" height="200"/>
 
-# Cilik Music Bot <img src="https://img.shields.io/github/v/release/grey423/CilikMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+# Amang Music Bot <img src="https://img.shields.io/github/v/release/amangtele/AmangMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Cilik Music Bot](https://github.com/grey423/CilikMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
+[Amang Music Bot](https://github.com/amangtele/AmangMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
 * Youtube, Soundcloud, Apple Music, Spotify, Resso, Live Streams and Telegram Audios & Videos support.
 * Written from scratch, making it stable and less crashes with attractive thumbnails.
@@ -18,7 +18,7 @@
 
 We have temporarily disabled the deployment for  all these cloud service platforms due to security and ban issues. We don't want innocent users who sign up there to be banned from the platform as a result of this deployment. [Read More](https://t.me/TheYukki/2541)
 <p align="left">
-<a href="https://dashboard.heroku.com/new?template=https://github.com/grey423/CilikMusic.git"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/amangtele/AmangMusic.git"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
 
 ## 🖇 Generating Pyrogram String Session
 
@@ -36,13 +36,13 @@ Checkout [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/loc
 
 Reach out to the maintainer at one of the following places:
 
-- [GitHub Issues](https://github.com/grey423/CilikMusic/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
+- [GitHub Issues](https://github.com/amangtele/AmangMusic/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
 - Contact options listed on [this GitHub profile](https://github.com/grey423)
-- [Telegram Support](https://t.me/CilikSupport)
+- [Telegram Support](https://t.me/amangsupportgrup)
 
 If you want to say **thank you** or/and support active development of YukkiMusicBot:
 
-- Add a [GitHub Star](https://github.com/grey423/CilikMusic) to the project.
+- Add a [GitHub Star](https://github.com/amangtele/AmangMusic) to the project.
 - Fork the Repo :)
 - Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
 
@@ -51,6 +51,7 @@ Together, we can make **YukkiMusicBot** better!
 
 Special thanks to these amazing projects/people which/who help power Yukki Music Bot:
 - [Yukki](https://github.com/TeamYukki/YukkiMusicBot)
+- [Cilik](https://github.com/grey423/CilikMusic)
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
 - [CallsMusic Team](https://github.com/Callsmusic)
