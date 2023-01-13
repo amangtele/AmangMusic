@@ -17,16 +17,16 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from CilikMusic import Carbon, YouTube, app
-from CilikMusic.utils.database import (delete_playlist, get_playlist,
+from AmangMusic import Carbon, YouTube, app
+from AmangMusic.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from CilikMusic.utils.decorators.language import language, languageCB
-from CilikMusic.utils.inline.playlist import (botplaylist_markup,
+from AmangMusic.utils.decorators.language import language, languageCB
+from AmangMusic.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from CilikMusic.utils.pastebin import Cilikbin
-from CilikMusic.utils.stream.stream import stream
+from AmangMusic.utils.pastebin import Amangbin
+from AmangMusic.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
@@ -55,7 +55,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Cilikbin(msg)
+    link = await Amangbin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
