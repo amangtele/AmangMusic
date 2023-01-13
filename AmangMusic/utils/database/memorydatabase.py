@@ -10,7 +10,7 @@
 
 import config
 from config import PRIVATE_BOT_MODE
-from CilikMusic.core.mongo import mongodb
+from AmangMusic.core.mongo import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands
