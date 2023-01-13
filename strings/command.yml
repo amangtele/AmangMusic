@@ -11,9 +11,9 @@
 # Commands in Every Language
 
 # Bot Commands
-PING_COMMAND : ["ping", "hidup ga"]
+PING_COMMAND : ["ping", "hidup ga", "amang"]
 START_COMMAND : ["start"]
-HELP_COMMAND : ["help"]
+HELP_COMMAND : ["help", "tulong"]
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
@@ -21,7 +21,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "mau dengerin"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
@@ -57,7 +57,7 @@ RESTART_COMMAND : ["restart"]
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo"]
 DELSUDO_COMMAND : ["delsudo"]
-SUDOUSERS_COMMAND : ["sudolist"]
+SUDOUSERS_COMMAND : ["sudolist", "listsudo"]
 
 #Broadcast 
 BROADCAST_COMMAND : ["broadcast"]
