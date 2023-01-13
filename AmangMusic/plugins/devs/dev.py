@@ -24,8 +24,8 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from CilikMusic import app
-from CilikMusic.misc import SUDOERS
+from AmangMusic import app
+from AmangMusic.misc import SUDOERS
 
 
 async def aexec(code, client, message):
