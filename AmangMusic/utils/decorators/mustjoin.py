@@ -25,7 +25,7 @@ def subcribe(func):
                         f"Hallo {rpk}. Agar Bisa Menggunakan Bot Anda Harus Masuk Ke Channel Updates Bot Terlebih Dahulu!. Silahkan Klik Tombol Di Bawah Untuk Join Ke Channel Update Bot.",
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
-                            [[InlineKeyboardButton("💌 Join Channel Bot", url=anjay)]]
+                            [[InlineKeyboardButton("💌 Join Channel Bot", url={MUST_JOIN})]]
                         ),
                     )
                     await message.stop_propagation()
