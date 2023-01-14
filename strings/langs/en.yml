@@ -248,12 +248,12 @@ L_B_1 : "🚀 Checkout Lyrics"
 # Start
 S_B_1 : "🗒 Commands"
 S_B_2 : "🔧 Settings"
-S_B_3 : "📣 Support"
+S_B_3 : "📨 Support"
 S_B_4 : "📨 Channel"
-S_B_5 : "➕ Add me to your Group ➕"
-S_B_6 : "☕️ Donate"
+S_B_5 : "✚ Add me to your Group"
+S_B_6 : "💾 Git Repo"
 S_B_7 : "🧸 Bot Owner"
-S_B_8 : "❓ Get Help"
+S_B_8 : "🗂 Commands Menu"
 
 #Help 
 H_B_1 : "👨🏻‍✈️ Admin Commands"
@@ -261,7 +261,7 @@ H_B_2 : "▶️ Play Commands"
 H_B_3 : "🤖 Bot Commands"
 H_B_4 : "🗃 Extra Commands"
 H_B_5 : "🗑 Close"
-H_B_6 : "Help Manage"
+H_B_6 : "🦸🏻‍♂️ SudoUser Commands"
 
 #PlayMode
 PM_B_1 : "DirectPlay"
