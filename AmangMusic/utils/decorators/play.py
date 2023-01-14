@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by kenkansaja@Github, < https://github.com/kenkansaja >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/kenkansaja/Musikku > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/kenkansaja/Musikku/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -20,7 +20,6 @@ from AmangMusic.utils.database import (get_cmode, get_lang,
                                        is_served_private_chat)
 from AmangMusic.utils.database.memorydatabase import is_maintenance
 from AmangMusic.utils.inline.playlist import botplaylist_markup
-from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 
 def PlayWrapper(command):
@@ -88,19 +87,6 @@ def PlayWrapper(command):
             return await message.reply_text(
                 _["general_4"], reply_markup=upl
             )
-        if MUST_JOIN:
-            try:
-                await app.get_chat_member(MUST_JOIN, message.from_user.id)
-            except UserNotParticipant:
-                sub = await app.export_chat_invite_link(https://t.me/idcryptoofficial)
-                kontol = InlineKeyboardMarkup(
-                    [
-                        [InlineKeyboardButton("MUST JOIN", url=https://t.me/idcryptoofficial)]
-                    ]
-                )
-                return await message.reply_text(_["force_sub"].format(message.from_user.mention), reply_markup=kontol)
-            
-
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
