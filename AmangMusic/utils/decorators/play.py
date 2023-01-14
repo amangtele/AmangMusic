@@ -92,10 +92,10 @@ def PlayWrapper(command):
             try:
                 await app.get_chat_member(MUST_JOIN, message.from_user.id)
             except UserNotParticipant:
-                sub = await app.export_chat_invite_link(MUST_JOIN)
+                sub = await app.export_chat_invite_link(https://t.me/idcryptoofficial)
                 kontol = InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("MUST JOIN", url=sub)]
+                        [InlineKeyboardButton("MUST JOIN", url=https://t.me/idcryptoofficial)]
                     ]
                 )
                 return await message.reply_text(_["force_sub"].format(message.from_user.mention), reply_markup=kontol)
