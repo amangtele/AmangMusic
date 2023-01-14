@@ -250,18 +250,18 @@ S_B_1 : "🗒 Perintah"
 S_B_2 : "🔧 Pengaturan"
 S_B_3 : "📨 Group"
 S_B_4 : "📨 Channel"
-S_B_5 : "➕ Tambahkan Ke Grup Anda ➕"
-S_B_6 : "☕️ Donasi"
+S_B_5 : "✚ Add me to your Group"
+S_B_6 : "💾 Repository"
 S_B_7 : "👨‍💻 Pemilik Bot"
-S_B_8 : "❓ Bantuan"
+S_B_8 : "🗂 Menu Perintah"
 
 #Help 
 H_B_1 : "👨🏻‍✈️ Perintah Admin"
-H_B_2 : "▶️ Mainkan Perintah"
+H_B_2 : "▶️ PMainkan Perintah"
 H_B_3 : "🤖 Perintah Bot"
 H_B_4 : "🗃 Perintah Ekstra"
 H_B_5 : "🗑 Tutup"
-H_B_6 : "Help Manage"
+H_B_6 : "🦸🏻‍♂️ Perintah SudoUser"
 
 #PlayMode
 PM_B_1 : "Putar Langsung"
