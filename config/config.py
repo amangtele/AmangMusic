@@ -16,6 +16,8 @@ from pyrogram import filters
 
 load_dotenv()
 
+MUST_JOIN = int(getenv("MUST_JOIN", "idcryptoofficial")
+
 # Get it from my.telegram.org
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
