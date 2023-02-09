@@ -64,8 +64,8 @@
         "required": false
       },
       "VIDEO_STREAM_LIMIT": {
-        "description": "SUPPORT HEROKU, GIVE "0" THIS VALUE!",
-        "value": : "",
+        "description": "SUPPORT HEROKU, DON'T CHANGE THIS VALUE!",
+        "value": "0",
         "required": true
       },
       "LOG_GROUP_ID": {
