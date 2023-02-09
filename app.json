@@ -63,6 +63,11 @@
         "value": "",
         "required": false
       },
+      "VIDEO_STREAM_LIMIT": {
+        "description": SUPPORT HEROKU DON'T CHANGE THIS VALUE!",
+        "value": :0",
+        "required": true
+      },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
