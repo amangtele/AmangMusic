@@ -14,62 +14,62 @@
     "stack": "container",
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan nilai ini dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan nilai ini dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "description": "Jika Anda ingin asisten Anda meninggalkan semua obrolan secara otomatis setelah beberapa waktu, Isi True jika iya, Isi False Jika tidak",
         "value": "True",
-        "required": false
+        "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "Token Bot dari Botfather",
         "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use AmangMusic's database for you.",
+        "description": "Mongo DB URL",
         "value": "",
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "description": "Nama untuk Bot Musik Anda. Tolong jangan gunakan karakter ascii",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai PEMILIK. Beberapa nilai harus dipisahkan dengan spasi.",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "Sesi String Pyrogram. Asisten Pertama adalah Wajib.",
         "value": "",
         "required": true
       },
+      "DURATION_LIMIT": {
+        "description": "diisi, berapa panjang durasi maksimal lagu!",
+        "required": true,
+        "value": "160"
+      },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "Isi dengan Token Api heroku.",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "Isi dengan nama sesuai app name pake huruf kecil.",
         "value": "",
         "required": false
       },
-      "VIDEO_STREAM_LIMIT": {
-        "description": "SUPPORT HEROKU, DON'T CHANGE THIS VALUE!",
-        "value": "0",
-        "required": true
-      },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "ID Grup Log Anda, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Gunakan hanya Grup. Tolong jangan gunakan ID Channel.",
         "value": "",
         "required": true
       },
@@ -79,9 +79,19 @@
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
-        "value": "master",
+        "description": "Repo's Branch Name",
+        "value": "Master",
         "required": true
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "Tautan Channel Dukungan jika ada, Biarkan kosong jika tidak ada dukungan. Tautan Anda harus dimulai dengan https://t.me/",
+        "value": "https://t.me/amwangs",
+        "required": false
+      },
+      "SUPPORT_GROUP": {
+        "description": "Tautan Group Dukungan jika ada, Biarkan kosong jika tidak ada dukungan. Tautan Anda harus dimulai dengan https://t.me/",
+        "value": "https://t.me/amangsupportgrup",
+        "required": false
       }
     },
     "buildpacks": [
@@ -95,11 +105,10 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-     "formation": {
+      "formation": {
           "worker": {
               "quantity": 1,
               "size": "eco"
           }
-      },
-      "stack": "heroku-22"
+      }
   }
