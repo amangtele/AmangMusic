@@ -14,7 +14,7 @@
 
 > The official [documentation site](https://notreallyshikhar.gitbook.io/yukkimusicbot/) contains a lot of information. The best place to start is from the deployment section.
 
-## ⚠️ Heroku / Okteto / Railway
+## ⚠️ Heroku
 
 <p align="left">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/amangtele/AmangMusic.git"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
