@@ -80,7 +80,7 @@
       },
       "UPSTREAM_BRANCH": {
         "description": "Repo's Branch Name",
-        "value": "Master",
+        "value": "master",
         "required": true
       },
       "SUPPORT_CHANNEL": {
