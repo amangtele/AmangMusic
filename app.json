@@ -75,7 +75,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/amangtele/AmangMusic",
+        "value": "https://github.com/amanqs/AmangMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
